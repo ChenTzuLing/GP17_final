@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所需材料</title>
+    <style>
+        body {
+            background-color: #CCB9FF;
+            /* 整體頁面背景 */
+            font-family: '微軟正黑體';
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: white;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .content1 {
+            margin-top: 80px;
+            background-color: #D4AF37;
+            color: white;
+            max-width: 1200px;
+            margin: 100px auto 20px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .content2 {
+            margin-top: 80px;
+            background-color: #A660A7;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 50px auto 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .content3 {
+            margin-top: 80px;
+            background-color: #D4AF37;
+            color: white;
+            max-width: 1200px;
+            margin: 50px auto 20px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .header-with-border {
+            text-align: center;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            /* 設置字體大小 */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .content-inner {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .text-section {
+            flex: 1;
+            text-align: center;
+        }
+
+        .toggle-content {
+            display: none;
+            /* 初始隱藏內文 */
+            margin-top: 10px;
+        }
+
+        h2 {
+            cursor: pointer;
+            text-decoration: underline;
+            color: white;
+            max-width: 300px;
+            margin: 10px auto 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2:hover {
+            color: black;
+            /* 滑鼠懸停時改變顏色 */
+        }
+
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-section img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function toggleContent(sectionId) {
+            const content = document.getElementById(sectionId);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block"; // 顯示內文
+            } else {
+                content.style.display = "none"; // 隱藏內文
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <button onclick="location.href='index.html'">活動介紹</button>
+        <button onclick="location.href='materials.html'">所需材料</button>
+        <button onclick="location.href='step.html'">步驟拆解</button>
+        <button onclick="location.href='results.html'">成果分享</button>
+    </nav>
+    <div class="content1">
+        <h1 class="header-with-border">使用工具：美工刀（裁紙機）、切割墊</h1>
+        <div class="content-inner">
+            <div class="text-section">
+                <h2 onclick="toggleContent('section1')">STEP 1：準備內頁</h2>
+                <div class="toggle-content" id="section1">
+                    <p>將事先準備好的紙張裁切成合適大小（本次活動使用B5大小）。若使用影印紙，一本的內頁數約30頁</p>
+                </div>
+                <h2 onclick="toggleContent('section2')">STEP 2：準備封面</h2>
+                <div class="toggle-content" id="section2">
+                    <p>把美麗的封面裁出至少兩張（本次活動使用B5大小）。若擔心失誤，可先裁切比內頁大的封面後再調整</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content2">
+        <h1 class="header-with-border">使用工具：筆、尺、切割墊</h1>
+        <div class="content-inner">
+            <div class="text-section">
+                <h2 onclick="toggleContent('section3')">STEP 3：在紙上做記號</h2>
+                <div class="toggle-content" id="section3">
+                    <img src="https://i.ibb.co/TccbJxb/1-5.png" alt="記號位置">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content3">
+        <h1 class="header-with-border">使用工具：打洞機</h1>
+        <div class="content-inner">
+            <div class="text-section">
+                <h2 onclick="toggleContent('section4')">STEP 4：打洞</h2>
+                <div class="toggle-content" id="section4">
+                    <p>按照記號位置一次完成內頁的打洞</p>
+                </div>
+                <h2 onclick="toggleContent('section5')">STEP 5：整理紙張</h2>
+                <div class="toggle-content" id="section5">
+                    <p>將較不完整的邊放在縫線處（打洞邊），確保其他三邊平整</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content2">
+        <h1 class="header-with-border">使用工具：針、線</h1>
+        <div class="content-inner">
+            <div class="text-section">
+                <h2 onclick="toggleContent('section6')">STEP 6：在封面封底做記號</h2>
+                <div class="toggle-content" id="section6">
+                    <p>拿起封面和一張內頁，使用針在圓心處依次戳過封面、封底做記號</p>
+                </div>
+                <h2 onclick="toggleContent('section7')">STEP 7：縫線</h2>
+                <div class="toggle-content" id="section7">
+                    <a href="https://youtube.com/shorts/nGXeKtnz31Q?feature=share" target="_blank">
+                        <button>觀看詳細步驟影片</button>
+                    </a>
+                </div>
+                <h2 onclick="toggleContent('section8')">STEP 8：打結</h2>
+                <div class="toggle-content" id="section8">
+                    <p>正常打結後，把結塞進第一個洞裡隱藏起來</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

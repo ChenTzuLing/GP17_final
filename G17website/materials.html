@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所需材料</title>
+    <style>
+        body {
+            background-color: #CCB9FF;
+            /* 整體頁面背景 */
+            font-family: '微軟正黑體';
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: white;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .content {
+            background-color: #1a6e44;
+            color: white;
+            max-width: 1200px;
+            margin: 100px auto 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .content1 {
+            background-color: #D4AF37;
+            color: white;
+            max-width: 1200px;
+            margin: 50px auto 20px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .header-with-border {
+            text-align: center;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            /* 平滑過渡效果 */
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            /* 放大 1.2 倍 */
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(33.33% - 20px);
+            box-sizing: border-box;
+            transition: transform 0.3s ease;
+        }
+
+        .item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            /* 平滑過渡效果 */
+        }
+
+        .item img:hover {
+            transform: scale(1.1);
+            /* 放大 1.2 倍 */
+        }
+
+        .item p {
+            margin-top: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <button onclick="location.href='index.html'">活動介紹</button>
+        <button onclick="location.href='materials.html'">所需材料</button>
+        <button onclick="location.href='step.html'">步驟拆解</button>
+        <button onclick="location.href='results.html'">成果分享</button>
+    </nav>
+    <div class="content">
+        <h1 class="header-with-border">所需材料</h1>
+        <div class="container">
+            <div class="item">
+                <img src="https://i.ibb.co/G2QFH51/11-Creative-Gift-Wrap-Ideas-Cool-Mom-Picks.jpg"
+                    style="width:300px;height:200px">
+                <p>美麗的封面紙（款式任意）</p>
+            </div>
+            <div class="item">
+                <img src="https://i.ibb.co/vHt0KT6/Techniques-for-Cutting-Stacks-of-Paper-ehow-com.jpg"
+                    style="width:300px;height:200px">
+                <p>內頁紙（顏色任意）</p>
+            </div>
+            <div class="item">
+                <img src="https://i.ibb.co/4N84hcL/Tapis-de-d-coupe-Silverline-A2.jpg" style="width:300px;height:200px">
+                <p>切割墊</p>
+            </div>
+            <div class="item">
+                <img src="https://i.ibb.co/hKXCGF6/10pcs-Gel-Pen-Set.jpg" style="width:300px;height:200px">
+                <p>有水的筆（顏色任意）</p>
+            </div>
+            <div class="item">
+                <img src="https://i.ibb.co/BP5nW3h/Large-Snap-Blade-Utility-Knife.jpg" style="width:300px;height:200px">
+                <p>美工刀（剪刀可替代但微辛苦）</p>
+            </div>
+            <div class="item">
+                <img src="https://i.ibb.co/Xt0npH2/2-Pcs-Steel-Sewing-Ruler-Machinist-Engineer-Accurate-Office.jpg"
+                    style="width:300px;height:200px">
+                <p>有刻度的尺</p>
+            </div>
+            <div class="item">
+                <img src="https://i.ibb.co/FVdxgSC/sho-1801.jpg" style="width:300px;height:200px">
+                <p>打洞機（可一次處理多張紙的即可）</p>
+            </div>
+            <div class="item">
+                <img src="https://i.ibb.co/phhrGrw/Bohin-Chenille-Needles-size-24.jpg" style="width:300px;height:200px">
+                <p>縫書針（約7公分長）</p>
+            </div>
+            <div class="item">
+                <img src="https://i.ibb.co/mty7sn6/Seine-Cotton-Twine-Tapestry-and-Rug-Warping-Yarn-454g-4-12-2-12.jpg"
+                    style="width:300px;height:200px">
+                <p>三股線（可用有硬度的線代替）</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="content1">
+        <h1 class="header-with-border">其他必需品</h1>
+        <div class="container">
+            <div class="item">
+                <img src="https://i.ibb.co/HVVxJpd/Human-brain-stroke-organ-PNG-Design.jpg"
+                    style="width:300px;height:200px">
+                <p>會思考的腦袋</p>
+            </div>
+            <div class="item">
+                <img src="https://i.ibb.co/N6WdkJH/ear-colouring-in-pages.jpg" style="width:300px;height:200px">
+                <p>聽得到的耳朵</p>
+            </div>
+            <div class="item">
+                <img src="https://i.ibb.co/12z4KgW/Hand-Drawn-Heart-Hd-Transparent-Hand-Drawn-Hearts-Red-Heart-Shaped-PNG-Image-For-Free-Download.jpg"
+                    style="width:300px;height:200px">
+                <p>願意學習的心</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

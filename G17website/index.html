@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活動介紹</title>
+    <style>
+        body {
+            background-color: #CCB9FF;
+            font-family: '微軟正黑體';
+            margin: 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: white;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .content {
+            margin-top: 80px;
+            background-color: #960018;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            max-width: 1200px;
+            /* 最大寬度 */
+            margin: 100px auto 20px;
+            /* 上方 100px，左右自動居中，底部間距 */
+            padding: 20px;
+            border-radius: 10px;
+            /* 圓角 */
+        }
+
+        .content1 {
+            background-color: #1a6e44;
+            color: white;
+            max-width: 1200px;
+            margin: 50px auto 20px;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /* 各部分間距 */
+        }
+
+        .header-with-border {
+            text-align: center;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            /* 設置字體大小 */
+        }
+
+        .content-inner {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            /* 頂部對齊 */
+        }
+
+        .text-section {
+            flex: 1;
+            text-align: center;
+        }
+
+        .toggle-content {
+            display: none;
+            /* 初始隱藏內文 */
+            margin-top: 10px;
+        }
+
+        h2 {
+            cursor: pointer;
+            text-decoration: underline;
+            background-color: black;
+            max-width: 300px;
+            margin: 10px auto 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2:hover {
+            color: #ffd700;
+            /* 滑鼠懸停時改變顏色 */
+        }
+
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-section img {
+            width: 350px;
+            height: 350px;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function toggleContent(sectionId) {
+            const content = document.getElementById(sectionId);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block"; // 顯示內文
+            } else {
+                content.style.display = "none"; // 隱藏內文
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <button onclick="location.href='index.html'">活動介紹</button>
+        <button onclick="location.href='materials.html'">所需材料</button>
+        <button onclick="location.href='step.html'">步驟拆解</button>
+        <button onclick="location.href='results.html'">成果分享</button>
+    </nav>
+    <div class="content">
+        <h1 class="header-with-border">活動介紹</h1>
+        <p>你想好聖誕節禮物要送什麼了嗎？想要送到既有心意又有誠意嗎？</p>
+        <p>一本復古又精美的線裝書可以在聖誕節前成為你送禮、紀念的好選擇！</p>
+        <p>本次邀請到政大中文系退休教授馮藝超老師分享訣竅，</p>
+        <p>以前讀中文系的學生只要上過老師的導師課，沒有一個不會製作線裝書！</p>
+        <p>而退休封針多年的馮老師將再次拾起針線，</p>
+        <p>帶大家手縫一本專屬自己的線裝書！</p>
+    </div>
+    <div class="content1" id="intro">
+        <h1 class="header-with-border">講師介紹</h1>
+        <!-- 文字和圖片分佈 -->
+        <div class="content-inner">
+            <!-- 左側文字部分 -->
+            <div class="text-section">
+                <h2 onclick="toggleContent('section1')">認識馮藝超老師</h2>
+                <div class="toggle-content" id="section1">
+                    <p>馮藝超老師是一位極具啟發性的導師，</p>
+                    <p>擅長引導大家思考「為什麼」和「怎麼做」的問題，</p>
+                    <p>讓每次的討論都充滿挑戰性與收穫感。</p>
+                    <p>無論是活動的意義、與生活的連結，還是對參加者的期待，</p>
+                    <p>老師都會不斷鼓勵大家思考背後的邏輯與價值。</p>
+                </div>
+
+                <h2 onclick="toggleContent('section2')">老師的特色與習慣</h2>
+                <div class="toggle-content" id="section2">
+                    <p>討論時，馮老師總是保持輕鬆愉快的氛圍。</p>
+                    <p>尤其是如果在老師家討論，準備好接受被餵食的驚喜吧！</p>
+                    <p>老師會熱情款待我們，讓討論過程既充滿腦力激盪，又溫暖有趣。</p>
+                    <p>雖然腦袋會有些燒，但總能收穫滿滿，感到值回票價！</p>
+                    <p>建議大家預留2.5至3小時，以便充分討論和交流。</p>
+                </div>
+
+                <h2 onclick="toggleContent('section3')">老師的學經歷背景</h2>
+                <div class="toggle-content" id="section3">
+                    <p>馮藝超老師畢業於政大中文系，後攻讀邊政學系碩士，</p>
+                    <p>也曾在政大中文系擔任兼任講師。</p>
+                    <p>這樣跨領域的背景，讓老師的知識面廣博而獨特，</p>
+                    <p>總能帶來讓人眼界大開的見解。</p>
+                </div>
+
+                <h2 onclick="toggleContent('section4')">和老師互動是怎樣的體驗？</h2>
+                <div class="toggle-content" id="section4">
+                    <p>與老師交流，就像進入了一場思維的冒險，既有趣又深刻。</p>
+                    <p>每一次活動後，都會覺得學到了更多，</p>
+                    <p>甚至重新思考自己與生活的關係。</p>
+                    <p>如果你喜歡在輕鬆的氛圍中激盪腦力，</p>
+                    <p>並且期待透過活動獲得新穎的啟發，</p>
+                    <p>那就快來參加馮藝超老師帶領的活動吧！</p>
+                </div>
+            </div>
+
+            <!-- 右側圖片部分 -->
+            <div class="image-section">
+                <img src="https://i.ibb.co/55nFnVG/life-mentor2024-20241209-STORIES-3519216038661661200-3-3519220963856727796.jpg"
+                    alt="馮藝超老師">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

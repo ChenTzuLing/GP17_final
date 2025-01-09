@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成果分享</title>
+    <style>
+        body {
+            background-color: #CCB9FF;
+            font-family: '微軟正黑體';
+            margin: 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: white;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .content2 {
+            margin-top: 80px;
+            background-color: #960018;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 100px auto 50px;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+
+        .content1 {
+            margin-top: 80px;
+            background-color: #A660A7;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 100px auto 50px;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+
+        .header-with-border {
+            text-align: center;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            padding-bottom: 10px;
+            justify-content: space-between;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .content-inner {
+            display: flex;
+            gap: 20px;
+            align-items: stretch;
+            padding: 0 20px;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <button onclick="location.href='index.html'">活動介紹</button>
+        <button onclick="location.href='materials.html'">所需材料</button>
+        <button onclick="location.href='step.html'">步驟拆解</button>
+        <button onclick="location.href='results.html'">成果分享</button>
+    </nav>
+    <div class="content-inner">
+        <div class="content1">
+            <h1 class="header-with-border">宣傳海報</h1>
+            <img src="https://i.ibb.co/44sJDB4/image.png">
+        </div>
+        <div class="content2">
+            <h1 class="header-with-border">影片成果</h1>
+            <a href="https://youtu.be/LSioiiOgdwQ" target="_blank">
+                <button>觀看影片</button>
+            </a>
+            <h1 class="header-with-border">詳細縫線步驟影片</h1>
+            <a href="https://youtube.com/shorts/nGXeKtnz31Q?feature=share" target="_blank">
+                <button>觀看影片</button>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
